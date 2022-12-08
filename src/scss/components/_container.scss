@@ -1,0 +1,19 @@
+.container-show {
+  &__item:first-child {
+    left: -600px;
+    top: 0;
+    z-index: 3;
+    position: relative;
+    transition: 0.5s;
+  }
+}
+
+@include screen-1120 {
+  .container-show {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    &__item:first-child {
+      left: 0;
+    }
+  }
+}

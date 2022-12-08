@@ -1,0 +1,155 @@
+.modal {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: -600px;
+  transition: 0.5s;
+  height: 100%;
+  visibility: hidden;
+  overflow: scroll;
+  @include hide-scrollbar;
+
+  .close-btn {
+    border-style: none;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    background-image: url('../assets/icons/close.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &__content {
+    width: 320px;
+    padding: 24px 0;
+    min-height: 100%;
+    border-left: 1px solid $light-turquoise-color-opasity;
+    box-shadow: -3px 0 15px 0px $shadow;
+    background-color: $white-color;
+  }
+
+  &__top,
+  &__inner,
+  &__bottom {
+    padding: 0 16px;
+  }
+
+  &__top {
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -2px;
+      bottom: 0;
+      width: 4px;
+      background-color: $light-turquoise-color;
+      border-radius: 10px;
+      height: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $black-blue-color;
+    margin: 0;
+    line-height: 1.33;
+  }
+
+  &__input,
+  &__input-textarea {
+    padding: 12px 16px;
+    border: 1px solid $smoky-white-color;
+    border-radius: 8px;
+    color: $cadet-blue-krayola;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  &__input-textarea {
+    resize: vertical;
+    min-height: 118px;
+  }
+
+  &__terms {
+    color: $pale-blue-color;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 27px;
+  }
+
+  &__form-bottom {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--active {
+    right: 0;
+    visibility: visible;
+  }
+
+  .circle-btn {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: $pink-color;
+  }
+  .highlight {
+    color: $radical-red-color;
+  }
+
+  &-submit {
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    border-style: none;
+    background-color: $pink-color;
+    padding-top: 5px;
+    color: $white-color;
+    font-family: 'TTLakes-Bold';
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  &-submit::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 16px;
+    left: 107px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid $white-color;
+    border-bottom: 2px solid $white-color;
+    transform: rotate(-45deg);
+  }
+  &__btn-text {
+    position: relative;
+    right: 10px;
+  }
+
+  @include screen-768 {
+    padding-left: 90px;
+
+    .close-btn {
+      position: absolute;
+      left: 0;
+      top: 32px;
+    }
+
+    &__content {
+      width: 440px;
+      padding: 40px 0;
+    }
+
+    &__top,
+    &__inner,
+    &__bottom {
+      padding: 0 32px;
+    }
+  }
+}

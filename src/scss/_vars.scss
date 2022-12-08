@@ -1,0 +1,27 @@
+$white-color: #ffff;
+$white-green-color: #d9fff5;
+$pink-color: #f34479;
+$bright-purple-color: #922a89;
+$green-crayola-color: #16a085;
+$smoky-white-color: #eaeaea;
+$pang-color: #b8ffec;
+$light-turquoise-color: #41f6d7;
+$light-turquoise-color-opasity: rgba(65, 246, 215, 0.1);
+$black-blue-color: #1b1c21;
+$white-aluminum-color: #b1aeae2c;
+$pale-blue-color: #7e7e82;
+$body-white-color: #f2f2f2;
+$light-cyanide: #d9fff5;
+$radical-red-color: #ff3e79;
+$cadet-blue-krayola: #b5b6bc;
+$shadow: rgba(0, 0, 0, 0.1);
+
+// https://colorscheme.ru/color-names.html
+
+:root {
+  --angle: 45deg;
+  --top-before: 3px;
+  --top-after: 8px;
+  --to: 100px;
+  --back: 0;
+}
