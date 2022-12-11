@@ -3,11 +3,11 @@
   margin: 0;
   margin-bottom: 50px;
 
-  &__container {
+  .main__container {
     max-width: fit-content;
   }
 
-  &__list {
+  .main__list {
     display: flex;
     overflow: auto;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     margin: 0;
     margin-left: 16px;
 
-    &__item {
+    .main__item {
       flex: 0 0 auto;
       border: 2px solid rgba(248, 248, 248, 1);
       margin-top: 24px;
@@ -25,53 +25,53 @@
       cursor: pointer;
     }
 
-    &__item:first-child {
+    .main__item:first-child {
       border: 2px solid $pang-color;
       border-radius: 5px 5px;
       background-color: $white-color;
     }
 
-    &__item:focus {
+    .main__item:focus {
       border-color: rgba(184, 255, 236, 1);
       border-radius: 5px 5px;
       background-color: #ffff;
     }
   }
 
-  &__list::-webkit-scrollbar {
+  .main__list::-webkit-scrollbar {
     width: 0;
   }
-  &__list {
+  .main__list {
     -ms-overflow-style: none;
   }
 
   @-moz-document url-prefix() {
-    &__list {
+    .main__list {
       scrollbar-width: none;
     }
   }
 
-  &__article {
+  .main__article {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &__group_description {
+  .main__group_description {
     flex: 0 1 100%;
   }
 
-  &__wrapper {
+  .main__wrapper {
     display: flex;
   }
 
-  &__title {
+  .main__title {
     flex: 0 0 auto;
     margin-left: 16px;
     margin-top: 0;
     margin-top: 24px;
     margin-bottom: 0;
   }
-  &__title::before {
+  .main__title::before {
     content: '';
     position: relative;
     top: 12.5%;
@@ -84,17 +84,17 @@
     background-color: $light-turquoise-color;
   }
 
-  &__title_font {
+  .main__title_font {
     font-family: 'TTLakes-Bold';
     color: $black-blue-color;
   }
 
-  &__navigation-service {
+  .main__navigation-service {
     display: none;
     margin-left: auto;
   }
 
-  &__navigation-list {
+  .main__navigation-list {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -132,7 +132,7 @@
 
   /* ======== button (start)============ */
 
-  &__detailed_btn {
+  .main__detailed_btn {
     margin-left: 16px;
     cursor: pointer;
     background: none;
@@ -140,7 +140,7 @@
     padding-bottom: 24px;
   }
 
-  &__detailed_btn::before {
+  .main__detailed_btn::before {
     content: '';
     display: inline-block;
     width: 8px;
@@ -153,82 +153,82 @@
     vertical-align: middle;
   }
 
-  &__detailed_btn:focus + span {
+  .main__detailed_btn:focus + span {
     background-size: 120%;
     background-color: $white-aluminum-color;
   }
 
-  &__detailed_btn + span:hover {
+  .main__detailed_btn + span:hover {
     background-size: 120%;
   }
 
-  &__detailed_btn:checked ~ &__content {
+  .main__detailed_btn:checked ~ &__content {
     max-height: 100vh;
   }
 
   /* ======== button (end)============ */
 
   /* ======== font (start) =========== */
-  &__navigation-item-font {
+  .main__navigation-item-font {
     font-family: 'TTLakes-Medium';
     font-size: 16px;
     color: $black-blue-color;
   }
 
-  &__list_font {
+  .main__list_font {
     font-family: 'TTLakes-Medium';
     color: $pale-blue-color;
   }
-  &__description_font {
+  .main__description_font {
     font-family: 'TTLakes-Regular';
     color: $black-blue-color;
     font-size: 14px;
   }
 
-  &__conteiner_font {
+  .main__conteiner_font {
     font-family: 'TTLakes-Medium';
     color: $black-blue-color;
     font-size: 16px;
   }
 
-  &__button_font {
+  .main__button_font {
     font-family: 'TTLakes-Medium';
     color: $black-blue-color;
     font-size: 16px;
   }
   /* ======== font (end) =========== */
 
-  &__images {
+  .main__images {
     flex: 0 1 100%;
     height: auto;
     border-radius: 5px;
   }
 
-  &__description {
+  .main__description {
     padding: 0 16px;
     padding-right: 48px;
     min-width: 321px;
   }
-  &__description-detailed {
+  .main__description-detailed {
     margin-left: 48px;
   }
 
   @include screen-768 {
-    &__group_description {
+    .main__group_description {
       flex: 1 50%;
     }
-    &__images {
+    .main__images {
       margin-top: 0;
       flex: 1 50%;
     }
-    &__article {
+    .main__article {
       margin-top: 16px;
     }
-    &__description {
+    .main__description {
       padding: 0 24px;
       padding-right: 24px;
     }
-    &__images {
+    .main__images {
       margin-top: 16px;
       margin-right: 24px;
       flex: 0 0 360px;
@@ -236,23 +236,23 @@
     }
   }
   @include screen-1120 {
-    &__article {
+    .main__article {
       margin-top: 0;
     }
-    &__list {
+    .main__list {
       flex-wrap: wrap;
     }
-    &__container {
+    .main__container {
       margin: 0 auto;
       max-width: 1120px;
     }
-    &__images {
+    .main__images {
       flex: 0 532px;
       margin-top: 8px;
       height: auto;
       border-radius: 5px;
     }
-    &__navigation-service {
+    .main__navigation-service {
       display: block;
     }
   }
