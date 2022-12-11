@@ -1,17 +1,17 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 const picters = [
-  '../assets/brands/lenovo.png',
-  '../assets/brands./samsung.png',
-  '../assets/brands./apple.png',
-  '../assets/brands./viewSonic.png',
-  '../assets/brands./bosch.png',
-  '../assets/brands./hp.png',
-  '../assets/brands./acer.png',
-  '../assets/brands./sony.png',
-  '../assets/brands./lenovo.png',
-  '../assets/brands./samsung.png',
-  '../assets/brands./apple.png',
+  './assets/brands/lenovo.png',
+  './assets/brands./samsung.png',
+  './assets/brands./apple.png',
+  './assets/brands./viewSonic.png',
+  './assets/brands./bosch.png',
+  './assets/brands./hp.png',
+  './assets/brands./acer.png',
+  './assets/brands./sony.png',
+  './assets/brands./lenovo.png',
+  './assets/brands./samsung.png',
+  './assets/brands./apple.png',
 ];
 
 const technics = [
