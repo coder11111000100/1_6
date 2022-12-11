@@ -1,17 +1,17 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 const picters = [
-  './assets/brands/lenovo.png',
-  './assets/brands./samsung.png',
-  './assets/brands./apple.png',
-  './assets/brands./viewSonic.png',
-  './assets/brands./bosch.png',
-  './assets/brands./hp.png',
-  './assets/brands./acer.png',
-  './assets/brands./sony.png',
-  './assets/brands./lenovo.png',
-  './assets/brands./samsung.png',
-  './assets/brands./apple.png',
+  '../assets/brands/lenovo.png',
+  '../assets/brands./samsung.png',
+  '../assets/brands./apple.png',
+  '../assets/brands./viewSonic.png',
+  '../assets/brands./bosch.png',
+  '../assets/brands./hp.png',
+  '../assets/brands./acer.png',
+  '../assets/brands./sony.png',
+  '../assets/brands./lenovo.png',
+  '../assets/brands./samsung.png',
+  '../assets/brands./apple.png',
 ];
 
 const technics = [
@@ -30,7 +30,7 @@ const block = document.querySelectorAll('.main-devices');
 
 block.forEach((item, i) => {
   const list = item.querySelector('.main-devices__list');
-  const template = item.querySelector('#template-list-item').content;
+  const template = item.querySelector('.template-list-item').content;
   const blockText = item.querySelector('.main-devices__hidden-text');
   const slider = item.querySelector('.swiper');
   const container = item.querySelector('.main-devices__wrapper');
@@ -63,6 +63,16 @@ block.forEach((item, i) => {
   const handlerAnimation = e => {
     if (!container.classList.contains('main-devices__hidden_animate-to')) {
       container.classList.add('main-devices__hidden_animate-to');
+
+      if (window.innerWidth < 850) {
+        container.style.height = '516px';
+      } else {
+        if (i) {
+          container.style.height = '516px';
+        } else {
+          container.style.height = '356px';
+        }
+      }
       setTimeout(function () {
         e.target.textContent = 'Скрыть';
         // document.documentElement.style.cssText = "--angle: 45deg";
@@ -72,6 +82,7 @@ block.forEach((item, i) => {
       }, 100);
     } else {
       container.classList.remove('main-devices__hidden_animate-to');
+      container.style.height = '176px';
       setTimeout(function () {
         e.target.textContent = 'Показать все';
         document.documentElement.style.setProperty('--angle', '45deg');

@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
-  .main__container {
+
+  &__container {
     max-width: fit-content;
   }
 
-  .main__list {
+  &__list {
     display: flex;
     overflow: auto;
     justify-content: space-between;
@@ -15,7 +16,7 @@
     margin: 0;
     margin-left: 16px;
 
-    .main__item {
+    &__item {
       flex: 0 0 auto;
       border: 2px solid rgba(248, 248, 248, 1);
       margin-top: 24px;
@@ -24,53 +25,53 @@
       cursor: pointer;
     }
 
-    .main__item:first-child {
+    &__item:first-child {
       border: 2px solid $pang-color;
       border-radius: 5px 5px;
       background-color: $white-color;
     }
 
-    .main__item:focus {
+    &__item:focus {
       border-color: rgba(184, 255, 236, 1);
       border-radius: 5px 5px;
       background-color: #ffff;
     }
   }
 
-  .main__list::-webkit-scrollbar {
+  &__list::-webkit-scrollbar {
     width: 0;
   }
-  .main__list {
+  &__list {
     -ms-overflow-style: none;
   }
 
   @-moz-document url-prefix() {
-    .main__list {
+    &__list {
       scrollbar-width: none;
     }
   }
 
-  .main__article {
+  &__article {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .main__group_description {
+  &__group_description {
     flex: 0 1 100%;
   }
 
-  .main__wrapper {
+  &__wrapper {
     display: flex;
   }
 
-  .main__title {
+  &__title {
     flex: 0 0 auto;
     margin-left: 16px;
     margin-top: 0;
     margin-top: 24px;
     margin-bottom: 0;
   }
-  .main__title::before {
+  &__title::before {
     content: '';
     position: relative;
     top: 12.5%;
@@ -83,17 +84,17 @@
     background-color: $light-turquoise-color;
   }
 
-  .main__title_font {
+  &__title_font {
     font-family: 'TTLakes-Bold';
     color: $black-blue-color;
   }
 
-  .main__navigation-service {
+  &__navigation-service {
     display: none;
     margin-left: auto;
   }
 
-  .main__navigation-list {
+  &__navigation-list {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -131,7 +132,7 @@
 
   /* ======== button (start)============ */
 
-  .main__detailed_btn {
+  &__detailed_btn {
     margin-left: 16px;
     cursor: pointer;
     background: none;
@@ -139,7 +140,7 @@
     padding-bottom: 24px;
   }
 
-  .main__detailed_btn::before {
+  &__detailed_btn::before {
     content: '';
     display: inline-block;
     width: 8px;
@@ -152,77 +153,82 @@
     vertical-align: middle;
   }
 
-  .main__detailed_btn:focus + span {
+  &__detailed_btn:focus + span {
     background-size: 120%;
     background-color: $white-aluminum-color;
   }
 
-  .main__detailed_btn + span:hover {
+  &__detailed_btn + span:hover {
     background-size: 120%;
   }
 
-  .main__detailed_btn:checked ~ .main__content {
+  &__detailed_btn:checked ~ &__content {
     max-height: 100vh;
   }
 
   /* ======== button (end)============ */
 
   /* ======== font (start) =========== */
+  &__navigation-item-font {
+    font-family: 'TTLakes-Medium';
+    font-size: 16px;
+    color: $black-blue-color;
+  }
 
-  .main__list_font {
+  &__list_font {
     font-family: 'TTLakes-Medium';
     color: $pale-blue-color;
   }
-  .main__description_font {
+  &__description_font {
     font-family: 'TTLakes-Regular';
     color: $black-blue-color;
     font-size: 14px;
   }
 
-  .main__conteiner_font {
+  &__conteiner_font {
     font-family: 'TTLakes-Medium';
     color: $black-blue-color;
     font-size: 16px;
   }
 
-  .main__button_font {
+  &__button_font {
     font-family: 'TTLakes-Medium';
     color: $black-blue-color;
     font-size: 16px;
   }
   /* ======== font (end) =========== */
 
-  .main__images {
+  &__images {
     flex: 0 1 100%;
     height: auto;
     border-radius: 5px;
   }
 
-  .main__description {
+  &__description {
     padding: 0 16px;
     padding-right: 48px;
     min-width: 321px;
   }
-  .main__description-detailed {
+  &__description-detailed {
     margin-left: 48px;
   }
 
   @include screen-768 {
-    .main__group_description {
+    &__group_description {
       flex: 1 50%;
     }
-    .main__images {
+    &__images {
       margin-top: 0;
       flex: 1 50%;
     }
-    .main__article {
+    &__article {
       margin-top: 16px;
     }
-    .main__description {
+    &__description {
       padding: 0 24px;
       padding-right: 24px;
     }
-    .main__images {
+    &__images {
       margin-top: 16px;
       margin-right: 24px;
       flex: 0 0 360px;
@@ -230,23 +236,23 @@
     }
   }
   @include screen-1120 {
-    .main__article {
+    &__article {
       margin-top: 0;
     }
-    .main__list {
+    &__list {
       flex-wrap: wrap;
     }
-    .main__container {
+    &__container {
       margin: 0 auto;
       max-width: 1120px;
     }
-    .main__images {
+    &__images {
       flex: 0 532px;
       margin-top: 8px;
       height: auto;
       border-radius: 5px;
     }
-    .main__navigation-service {
+    &__navigation-service {
       display: block;
     }
   }
