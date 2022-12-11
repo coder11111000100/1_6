@@ -11,7 +11,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "../node_modules/swiper/swiper.esm.js");
 
-const picters = ['../assets/brands/lenovo.png', '../assets/brands./samsung.png', '../assets/brands./apple.png', '../assets/brands./viewSonic.png', '../assets/brands./bosch.png', '../assets/brands./hp.png', '../assets/brands./acer.png', '../assets/brands./sony.png', '../assets/brands./lenovo.png', '../assets/brands./samsung.png', '../assets/brands./apple.png'];
+const picters = ['./assets/brands/lenovo.png', './assets/brands./samsung.png', './assets/brands./apple.png', './assets/brands./viewSonic.png', './assets/brands./bosch.png', './assets/brands./hp.png', './assets/brands./acer.png', './assets/brands./sony.png', './assets/brands./lenovo.png', './assets/brands./samsung.png', './assets/brands./apple.png'];
 const technics = ['Ремонт ноутбуков ', 'Ремонт планшетов ', 'Ремонт ПК ', 'Ремонт  мониторов ', 'ремонт телефонов', 'ремонт принтеров', 'ремонт электросамокатов', 'ремонт БП', 'ремонт пустого места'];
 const block = document.querySelectorAll('.main-devices');
 block.forEach((item, i) => {
