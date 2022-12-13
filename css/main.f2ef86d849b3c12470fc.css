@@ -1999,7 +1999,7 @@ template {
   .main-services__item:nth-child(6)::after {
     content: none; }
   .main-services__row {
-    grid-template-columns: minmax(350px, 2fr) repeat(3, minmax(85px, 1fr));
+    grid-template-columns: minmax(300px, 2fr) repeat(3, minmax(85px, 1fr));
     grid-template-rows: none; }
   .main-services__item {
     border-radius: 0%; }
