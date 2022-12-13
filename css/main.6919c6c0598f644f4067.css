@@ -1875,7 +1875,9 @@ template {
 .main-services__wrapper {
   margin-top: 24px;
   max-width: 1050px;
-  margin: auto; }
+  margin: auto;
+  margin-left: 24px;
+  margin-right: 24px; }
 
 .main-services__ceil:last-child {
   justify-self: end;
