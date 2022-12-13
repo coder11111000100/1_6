@@ -204,7 +204,7 @@
       content: none;
     }
     &__row {
-      grid-template-columns: minmax(350px, 2fr) repeat(3, minmax(85px, 1fr));
+      grid-template-columns: minmax(300px, 2fr) repeat(3, minmax(85px, 1fr));
       grid-template-rows: none;
     }
     &__item {
