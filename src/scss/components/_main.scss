@@ -175,6 +175,14 @@
     color: $black-blue-color;
   }
 
+  .main-devices__hidden_animate-to {
+    // transform: translateY(100px);
+  }
+
+  .main-devices__hidden_animate-back {
+    // transform: translateY(0);
+  }
+
   .main__list_font {
     font-family: 'TTLakes-Medium';
     color: $pale-blue-color;

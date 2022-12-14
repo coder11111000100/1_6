@@ -11,7 +11,10 @@ const container = services.querySelector('.main-services__wrapper');
 
 function serviceSlider() {
   let mySwiper;
-  if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
+  if (
+    document.documentElement.clientWidth <= 767 &&
+    slider.dataset.mobile == 'false'
+  ) {
     mySwiper = new Swiper(slider, {
       modules: [Navigation, Pagination],
       // Optional parameters
@@ -38,7 +41,7 @@ function serviceSlider() {
     slider.dataset.mobile = 'true';
   }
 
-  if (window.innerWidth > 767) {
+  if (document.documentElement.clientWidth > 767) {
     slider.dataset.mobile = 'false';
     container.classList.remove('swiper');
     list.classList.remove('swiper-wrapper');

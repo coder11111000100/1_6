@@ -1,9 +1,11 @@
+
 @import 'mixins';
 @import 'font';
 @import 'vendor';
 @import 'vars';
 @import './main.css';
 @import './components/main-header';
+@import './components/normalize';
 @import './components/main';
 @import './components/brands';
 @import './components/services';

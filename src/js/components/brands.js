@@ -101,13 +101,18 @@ block.forEach((item, i) => {
 
   function mobileSlider() {
     let mySwiper;
-    if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
+    if (
+      document.documentElement.clientWidth <= 767 &&
+      slider.dataset.mobile == 'false'
+    ) {
       mySwiper = new Swiper(slider, {
         modules: [Navigation, Pagination],
         // Optional parameters
         direction: 'horizontal',
         // loop: true,
         slidesPerView: 'auto',
+        // observer: true,
+        // observeParents: true,
 
         // If we need pagination
         pagination: {
@@ -121,7 +126,7 @@ block.forEach((item, i) => {
       slider.dataset.mobile = 'true';
     }
 
-    if (window.innerWidth > 767) {
+    if (document.documentElement.clientWidth > 767) {
       slider.dataset.mobile = 'false';
       container.classList.remove('swiper');
       list.classList.remove('swiper-wrapper');
