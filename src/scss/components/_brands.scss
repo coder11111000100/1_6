@@ -190,4 +190,9 @@
       grid-template-columns: repeat(4, minmax(224px, 240px));
     }
   }
+  // @include screen-768 {
+  //   &__wrapper-too {
+  //     height: 186px !important;
+  //   }
+  // }
 }

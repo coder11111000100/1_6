@@ -38,7 +38,7 @@ block.forEach((item, i) => {
   if (i == 1) {
     const pagination = item.querySelector('.swiper-pagination');
     pagination.style.bottom = '0px';
-    container.style.height = '186px';
+    container.style.height = '176px';
   }
 
   const addElemHandler = (elem, num) => {
@@ -82,7 +82,7 @@ block.forEach((item, i) => {
       }, 100);
     } else {
       container.classList.remove('main-devices__hidden_animate-to');
-      container.style.height = '186px';
+      container.style.height = '176px';
       setTimeout(function () {
         e.target.textContent = 'Показать все';
         document.documentElement.style.setProperty('--angle', '45deg');
