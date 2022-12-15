@@ -9,3 +9,13 @@ body {
 html {
   overflow-x: hidden;
 }
+
+/*Убрать полосу прокрутки у элемента*/
+/* .modal__content::-webkit-scrollbar {
+  width: 0;
+} */
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}

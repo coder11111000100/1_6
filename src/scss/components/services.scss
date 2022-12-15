@@ -62,6 +62,7 @@
     margin: auto;
     margin-left: 24px;
     margin-right: 24px;
+    margin-bottom: 40px;
   }
 
   &__ceil:last-child {
@@ -118,7 +119,7 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: -20px !important;
+    bottom: -30px !important;
   }
 
   &__item:not(&__item:first-child) &__ceil:last-child::after {
