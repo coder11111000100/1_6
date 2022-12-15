@@ -37,8 +37,12 @@ block.forEach((item, i) => {
   const hidden = item.querySelector('.main-devices__hidden');
   if (i == 1) {
     const pagination = item.querySelector('.swiper-pagination');
+    if (document.documentElement.clientWidth > 767) {
+      container.style.height = '176px';
+    } else {
+      container.style.height = '188px';
+    }
     pagination.style.bottom = '0px';
-    container.style.height = '176px';
   }
 
   const addElemHandler = (elem, num) => {
